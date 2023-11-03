@@ -1,0 +1,44 @@
+@use "../base/mixins" as mx;
+@use "../base/variables" as v;
+
+.enviado{
+    position: fixed;
+    z-index: 3;
+    width: 35rem;
+    height: 10rem;
+    padding: 0 3rem;
+
+    top: 10rem;
+    left: -40rem;
+    border: 3px solid rgb(0, 255, 0);
+    color: white;
+    background-color: rgb(47, 158, 47);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+
+    transition: left 0.8s ease;
+
+    .check{
+        font-size: 5rem
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+.enviado-active{
+  left: 1rem;
+
+  @include mx.telefono {
+    left: 2rem;
+  }
+}
+
+.enviado-error{
+    border: 3px solid rgb(226, 1, 1);
+    background-color: rgb(139, 16, 16);
+}

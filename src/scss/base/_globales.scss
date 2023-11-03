@@ -1,0 +1,56 @@
+@use "mixins" as mx;
+@use "variables" as v;
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: v.$fuente1;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.btn{
+    @include mx.centrarFlex;
+    height: 5rem;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    margin: 0 auto;
+    color: white;
+    background-color: v.$rosa1;
+    max-width: 25rem;
+    font-size: 2rem;
+
+    &:hover{
+        background-color: v.$rosa2;
+    }
+}
+
+h2{
+    font-size: 2.8rem;
+    text-align: center;
+    color: white;
+}

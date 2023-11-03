@@ -1,0 +1,183 @@
+@use "../base/mixins" as mx;
+@use "../base/variables" as v;
+
+.body-desactivado{
+    overflow: hidden;
+}
+
+.header{
+    background-color: v.$azul2;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 7rem;
+}
+
+.navegacion{
+    @include mx.container(90%);
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mx.desktopXL {
+        flex-direction: row;
+        @include mx.container(80%);
+    }
+}
+
+.logo{
+    width: 100%;
+    position: relative;
+
+    @include mx.desktopXL {
+        width: auto;   
+    }
+
+    a{
+        height: 7rem;
+        @include mx.centrarFlex;
+
+        img{
+            height: 6rem;
+        }
+    }
+}
+
+.navbar{
+    width: 3.5rem;
+    height: 100%;
+    padding: 2.25rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+
+    @include mx.desktopXL {
+        visibility: hidden;
+    }
+
+    .bar{
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        transition: all .3s ease-in-out;
+    }
+
+    .close:nth-child(1){
+        transform: translateY(1.1rem) rotate(-45deg);
+    }
+
+    .close:nth-child(2){
+        opacity: 0;
+    }
+
+    .close:nth-child(3){
+        transform: translateY(-1.1rem) rotate(45deg);
+    }
+}
+
+.nav{
+    width: 100vw;
+    height: calc(100vh - 7rem);
+    background-color: v.$azul2;
+    clip-path: circle(0% at top left);
+    transition: clip-path .5s ease-in-out;
+    position: absolute;
+    top: 7rem;
+
+    @include mx.tablet {
+        width: 40rem;
+        left: 0;
+    }
+
+    @include mx.desktopXL {
+        position: relative;
+        top: 0;
+        width: 70%;
+        clip-path: none;
+        margin-left: auto;
+        height: 7rem;
+    }
+}
+
+.nav-container{
+    width: 20rem;
+    margin: 0 auto;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mx.desktopXL {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;   
+    }
+
+    .nav__link{
+        flex: 1;
+        @include mx.centrarFlex;
+        color: white;
+        font-weight: 700;
+        position: relative;
+        width: 100%;
+
+        @include mx.desktopXL {
+            height: 100%;
+        }
+
+        &::after{
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: v.$rosa1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width .3s ease-in;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+        &:hover{
+            color: v.$rosa1;
+        }
+    }
+
+    .medios{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        
+        @include mx.desktopXL {
+            flex-direction: row;
+        }
+
+        .nav__btn{
+            color: black;
+            background-color: white;
+            width: 100%;
+            border-radius: 5rem;
+            height: 4rem;
+            font-size: 1.6rem;
+
+            &:hover{
+                background-color: v.$rosa1;
+                color: white;
+            }
+        }
+    }
+}
+
+.nav-active{
+    clip-path: circle(150% at top left);
+}

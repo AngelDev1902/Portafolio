@@ -1,0 +1,66 @@
+@use "../base/mixins" as mx;
+@use "../base/variables" as v;
+
+.footer{
+    width: 100%;
+    background-color: v.$azul2;
+    padding: 2rem 0;
+
+    p{
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        padding: 3rem 0;
+    }
+}
+
+.footer-logo{
+    height: 5rem;
+
+    img{
+        height: 100%;
+    }
+}
+
+.redes{
+    display: flex;
+    width: 80%;
+    margin: 2rem auto;
+    justify-content: center;
+
+    @include mx.tablet {
+        width: 50%;
+    }
+
+    @include mx.desktop{
+        width: 30%
+    }
+
+    .red{
+        @include mx.centrarFlex;
+        flex: 1;
+        font-size: 3rem;
+        color: white;
+
+        &:nth-child(1):hover{
+            color: rgb(220, 10, 146);
+        }
+
+        &:nth-child(2):hover{
+            color: rgb(24, 74, 223);
+        }
+
+        &:nth-child(3):hover{
+            color: rgb(16, 166, 241);
+        }
+
+        &:nth-child(4):hover{
+            color: red;
+        }
+
+        &:nth-child(5):hover{
+            color: rgb(0, 251, 255);
+            filter: drop-shadow(-2px 2px 0 rgb(218, 19, 118));
+        }
+    }
+}
