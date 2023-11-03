@@ -227,7 +227,7 @@
                         <h3>Cafe Esspreso</h3>
 
                         <p>
-                            Proyecto realizado con html, sass, javscript, enfocado en la implementacion de js con el DOM
+                            Landing pages realizada con html, sass, javscript, enfocado en la implementacion de js con el DOM
                         </p>
 
                         <div class="proyecto__botones">
@@ -249,7 +249,7 @@
                         <h3>Viajes México</h3>
 
                         <p>
-                            Proyecto realizado con html, sass, javscript.
+                            Landing pages realizada con html, sass, javscript.
                         </p>
 
                         <div class="proyecto__botones">
@@ -268,10 +268,10 @@
                         </picture>
                     </div>
                     <div class="proyecto__info">
-                        <h3>Viajes México</h3>
+                        <h3>Matrices</h3>
 
                         <p>
-                            Proyecto realizado con html, sass, javscript, php y mysql
+                            Calculadora para resolución de matrices.
                         </p>
 
                         <div class="proyecto__botones">
