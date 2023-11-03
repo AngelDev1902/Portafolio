@@ -218,21 +218,21 @@
                 <div class="proyecto">
                     <div class="proyecto__img">
                         <picture>
-                            <source srcset='build/img/proyect2.avif' type='image/avif'>
-                            <source srcset='build/img/proyect2.webp' type='image/webp'>
-                            <img loading='lazy' src='build/img/proyect2.jpg' alt='imagen 1'>
+                          <source srcset="build/img/proyect2.avif" type="image/avif">
+                          <source srcset="build/img/proyect2.webp" type="image/webp">
+                          <img loading="lazy" src="build/img/proyect2.jpg" alt="">
                         </picture>
                     </div>
                     <div class="proyecto__info">
-                        <h3>Viajes México</h3>
+                        <h3>Cafe Esspreso</h3>
 
                         <p>
-                            Proyecto realizado con html, sass, javscript, php y mysql
+                            Proyecto realizado con html, sass, javscript, enfocado en la implementacion de js con el DOM
                         </p>
 
                         <div class="proyecto__botones">
-                            <a href="#" class="proyecto-btn btn" target="_blank">Visitar</a>
-                            <a href="#" class="proyecto-btn btn" target="_blank">GitHub</a>
+                            <a href="https://angeldev1902.github.io/Cafeteria/" class="proyecto-btn btn" target="_blank">Visitar</a>
+                            <a href="https://github.com/AngelDev1902/Cafeteria" class="proyecto-btn btn" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -249,12 +249,12 @@
                         <h3>Viajes México</h3>
 
                         <p>
-                            Proyecto realizado con html, sass, javscript, php y mysql
+                            Proyecto realizado con html, sass, javscript.
                         </p>
 
                         <div class="proyecto__botones">
-                            <a href="#" class="proyecto-btn btn" target="_blank">Visitar</a>
-                            <a href="#" class="proyecto-btn btn" target="_blank">GitHub</a>
+                            <a href="https://angeldev1902.github.io/Viajes/" class="proyecto-btn btn" target="_blank">Visitar</a>
+                            <a href="https://github.com/AngelDev1902/Viajes" class="proyecto-btn btn" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
