@@ -71,7 +71,7 @@
 
                     <div class="texto">
                         <p>
-                            Soy un desarrollador web que combina creatividad y código para crear experiencias digitales cautivadoras. 
+                            Soy desarrollador web con habilidades para unir creatividad y código creando experiencias digitales cautivadoras. 
                             Mi enfoque es transformar ideas en sitios web funcionales, utilizando las mejores practicas. Siempre busco
                             actualizarme y aprender algo nuevo día a día. Me gusta trabajar en equipo y ofrecer mi mayor aporte a cada proyecto.
                         </p>
